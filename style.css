@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Moji;
+    src: url('./fonts/Vazir/Vazir-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/rainy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-family: 'Moji';
+    direction: rtl;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#search {
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    direction: ltr;
+    min-width: 350px;
+    font-size: 1.5rem;
+}
+
+#search:focus {
+    outline: none;
+}
+
+.weather {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    margin: 10px;
+}
+
+.temp p{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background: #de5959;
+    font-size: 1.2rem;
+}
+
+#map{
+    width: 100%;
+    height: 450px;
+}
